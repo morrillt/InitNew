@@ -1,0 +1,125 @@
+/* Common styles */
+
+.container {
+	margin: 90px auto;
+}
+
+/* Chats section */
+
+.dropdown-content li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.collection .collection-item.avatar {
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.collection .collection-item.avatar:hover {
+	background-color: #f5f5f5;
+}
+
+.collection .collection-item.avatar .title {
+	margin-left: 60px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.collection .collection-item.avatar .badge {
+	margin-left: 10px;
+}
+
+.collection .collection-item.avatar img {
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* aligning badge right */
+.badge .orange .white-text span{
+  text-align: right;
+
+
+}
+
+/* Chat Experience section */
+
+.conversation-area {
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.conversation-bubble {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 10px;
+}
+
+.conversation-bubble.alt {
+	flex-direction: row-reverse;
+}
+
+.conversation-bubble img {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.conversation-bubble:nth-child(2n+1) {
+	background-color: #f5f5f5;
+}
+
+.reply-area {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.reply-area textarea {
+	resize: none;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+/* Prompt Suggestions section */
+
+.card {
+	margin-bottom: 10px;
+  /* inline block makes them next to each other */
+  display: inline-block; 
+}
+
+.btn {
+	margin-right: 10px;
+}
+
+.smallercard{
+  /* width: 200px; */
+
+
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 992px) {
+	.col.s3 {
+		width: 100%;
+	}
+}
+/* bs testing */
+.box {
+  background-color: rgb(126, 100, 65);
+
+}
+.content-area {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+

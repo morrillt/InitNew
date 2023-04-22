@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch in Chrome",
+      "url": "http://localhost:5501/app/views",
+      "webRoot": "${workspaceFolder}"
+    },
+    
+  {
+    
+        "name": "test fetch",
+        "program": "${workspaceFolder}/reference/Stuff/fetchdata.js",
+        "request": "launch",
+        "skipFiles": ["<node_internals>/**"],
+        "type": "node"
+      }
+    ]
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Dropdown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      /* #names-dropdown {
+        display: block;
+        margin: 0 auto;
+        
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="input-field col s12">
+        <select id="names-dropdown">
+          <option value="" disabled selected>Choose a name</option>
+          <option value="John Smith">John Smith</option>
+          <option value="Jane Doe">Jane Doe</option>
+          <option value="David Lee">David Lee</option>
+          <option value="Emily Chen">Emily Chen</option>
+        </select>
+        <label for="names-dropdown">Select a name</label>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, {});
+      });
+    </script>
+  </body>
+</html>
+
